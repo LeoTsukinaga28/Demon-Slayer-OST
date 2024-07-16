@@ -196,7 +196,7 @@ nav ul li {
     }
 }
 
-@media screen and (max-width: 476px) {
+@media screen and (max-width: 500px) {
     .container {
         padding: 5px;
     }
