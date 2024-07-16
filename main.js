@@ -97,9 +97,9 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
 })
 
 document.getElementById('next').addEventListener('click', (e)=>{
-    if(songIndex>=9){
-        document.getElementById(`${songIndex-1}`).classList.remove('fa-pause-circle')
-        document.getElementById(`${songIndex-1}`).classList.add('fa-play-circle')
+    if(songIndex>=8){
+        document.getElementById(`${songIndex}`).classList.remove('fa-pause-circle')
+        document.getElementById(`${songIndex}`).classList.add('fa-play-circle')
         songIndex = 0
     }
     else {
@@ -123,7 +123,7 @@ document.getElementById('previous').addEventListener('click', ()=> {
     if(songIndex<=0){
         document.getElementById(`${songIndex}`).classList.remove('fa-pause-circle')
         document.getElementById(`${songIndex}`).classList.add('fa-play-circle')
-        songIndex = 9
+        songIndex = 8
     } else {
         songIndex -= 1
     }
